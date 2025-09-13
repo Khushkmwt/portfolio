@@ -23,7 +23,7 @@ export default function Contact() {
         message: formData.get("message"),
       }),
     });
-
+    console.log(res)
     if (res.ok) {
       alert("✅ Message sent successfully!");
       e.target.reset();
