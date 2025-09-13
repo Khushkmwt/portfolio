@@ -28,7 +28,7 @@ export default function Contact() {
       alert("✅ Message sent successfully!");
       e.target.reset();
     } else {
-      alert("❌ Failed to send. Please try again.");
+      alert("Server down, Please try again later.");
     }
   };
 
