@@ -5,28 +5,55 @@ const stack = [
   {
     year: "2023",
     icon: <Code2 className="h-5 w-5 text-indigo-500" />,
-    skills: ["React", "Vite", "Tailwind CSS", "JavaScript (ES6+)", "Zustand"],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript (ES6+)",
+      "Bootstrap",
+      "Tailwind CSS",
+    ],
   },
   {
     year: "2024",
     icon: <Database className="h-5 w-5 text-emerald-500" />,
-    skills: ["TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Redis"],
+    skills: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "MySQL",
+      "EJS",
+      "JWT",
+      "Git & GitHub",
+      "Postman",
+      "Java (DSA)",
+    ],
   },
   {
     year: "2025",
     icon: <Cpu className="h-5 w-5 text-fuchsia-500" />,
-    skills: ["Machine Learning", "PyTorch", "FastAPI", "Cloud Deployments", "Microservices"],
+    skills: [
+      "Python",
+      "Machine Learning",
+      "PyTorch",
+      "scikit-learn",
+      "FastAPI",
+    ],
   },
 ];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 export default function TechStack() {
   return (
-    <section id="experience" className="mx-auto max-w-5xl px-4 py-24">
+    <section id="techstack" className="mx-auto max-w-5xl px-4 py-24">
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -35,7 +62,7 @@ export default function TechStack() {
       >
         <motion.h2
           variants={fadeUp}
-          className="text-3xl font-bold tracking-tight sm:text-4xl mb-16 text-center"
+          className="mb-16 text-center text-3xl font-bold tracking-tight sm:text-4xl"
         >
           Tech Stack Timeline
         </motion.h2>

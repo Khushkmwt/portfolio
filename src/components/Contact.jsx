@@ -63,7 +63,7 @@ export default function Contact() {
           <span>•</span>
           <a href="https://www.linkedin.com/in/khushkumawat" className="inline-flex items-center gap-1 hover:underline"><Linkedin className="h-4 w-4" /> LinkedIn</a>
           <span>•</span>
-          <a href="mailto:khushkumawat.dev@gmail.com" className="inline-flex items-center gap-1 hover:underline"><Mail className="h-4 w-4" /> Email</a>
+          <a href="mailto:dilkhushkumawat33@gmail.com" className="inline-flex items-center gap-1 hover:underline"><Mail className="h-4 w-4" /> Email</a>
         </motion.div>
       </motion.div>
     </section>

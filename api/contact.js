@@ -15,13 +15,14 @@ export default async function handler(req, res) {
       return res.status(400).json({ success: false, error: "Missing fields" });
     }
 
-    await resend.emails.send({
-      from: "Portfolio Contact <onboarding@resend.dev>", // change this later to your verified domain email
-      to: "dilkhushkumawat33@gmail.com", // replace with your email
-      subject: `New message from ${name}`,
-      reply_to: email,
-      text: message,
-    });
+  await resend.emails.send({
+  from: "Portfolio Contact <onboarding@resend.dev>", // must be your verified email/domain
+  to: "dilkhushkumawat33@gmail.com", // your inbox
+  subject: `New message from ${name}`,
+  reply_to: email, // 👈 user's email goes here
+  text: `From: ${name} <${email}>\n\n${message}`,
+});
+
 
     res.status(200).json({ success: true });
   } catch (error) {

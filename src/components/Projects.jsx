@@ -36,9 +36,9 @@ export default function Projects({ onOpen }) {
           "MERN stack chat app with group and personal chats, real-time text & file sharing. Zustand for state management and JWT for authentication.",
         tags: ["MERN", "Zustand", "JWT"],
         image:
-          "https://images.unsplash.com/photo-1616469829581-73993eb86d5c?q=80&w=1200&auto=format&fit=crop",
+          "chatapp.png",
         links: {
-          demo: "https://khushkmwt.netlify.app/",
+          demo: "https://chatapp-snowy-ten.vercel.app",
           repo: "https://github.com/Khushkmwt/chatapp",
         },
       },
@@ -48,7 +48,7 @@ export default function Projects({ onOpen }) {
           "Full-stack app using React, Flask, and Mediapipe for real-time attendance tracking via facial recognition with secure backend logging.",
         tags: ["React", "Flask", "Mediapipe", "DeepFace"],
         image:
-          "https://images.unsplash.com/photo-1600267165477-1cf6422ec8a6?q=80&w=1200&auto=format&fit=crop",
+          "face.png",
         links: {
           demo: "https://khushkmwt.netlify.app/",
           repo: "https://github.com/Khushkmwt/face_recognition",
